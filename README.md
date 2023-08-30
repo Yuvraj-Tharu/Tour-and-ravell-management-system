@@ -1,2 +1,2 @@
-# Tour-and-ravell-management-system
+# Tour-and-Travell-management-system
 Tour and travelled management system 
