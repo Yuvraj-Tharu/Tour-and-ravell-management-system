@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Admin Dashboard</title>
+        <link rel="stylesheet" href="Packages.css">
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="navigation">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="User">
+                                <ion-icon name="person-circle-outline"></ion-icon>
+                            </span>
+                            <span class="title">Admin</span>
+                        </a>
+                        <a href="#">
+                            <span class="Online">
+                                <ion-icon name="ellipse"></ion-icon>
+                            </span>
+                            <span class="title">Online</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="Admin Dashboard.html">
+                            <span class="icon">
+                                <ion-icon name="logo-microsoft"></ion-icon>
+                            </span>
+                            <span class="title">Dashboard</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="Category.html">
+                            <span class="icon">
+                                <ion-icon name="copy"></ion-icon>
+                            </span>
+                            <span class="title">Category</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="Packages.html">
+                            <span class='icon'>
+                                <ion-icon name="cube"></ion-icon>
+                            </span>
+                            <span class="title">Packages</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="Customers.html">
+                            <span class='icon'>
+                                <ion-icon name="people"></ion-icon>
+                            </span>
+                            <span class="title">Customers</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="Hotels.html">
+                            <span class='icon'>
+                                <ion-icon name="business"></ion-icon>
+                            </span>
+                            <span class="title">Hotels</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="Sold Packages.html">
+                            <span class='icon'>
+                                <ion-icon name="bag-check"></ion-icon>
+                            </span>
+                            <span class="title">Sold Packages</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="System Users.html">
+                            <span class='icon'>
+                                <ion-icon name="person-add"></ion-icon>
+                            </span>
+                            <span class="title">System Users</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <span class="menu-outline">
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </span>
+                </div>
+
+                <div class="search">
+                    <label>
+                        <ion-icon name="search-outline"></ion-icon>
+                        <input type="text" placeholder="Search...">
+                    </label>
+                </div>
+                <div class="notification">
+                    <ion-icon name="notifications-outline"></ion-icon>
+                    <span class="badge">5</span>
+                </div>
+                <div class="message">
+                    <ion-icon name="mail-unread-outline"></ion-icon>
+                    <span class="badge">8</span>
+                </div>
+                
+                <div class="user">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="user-pic" alt="">
+                    <div class="sub-menu-wrap">
+                        <div class="sub-menu">
+                            <div class="Admin-info">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <ion-icon name="person-circle-outline"></ion-icon>
+                                            <span class="title">Profile</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#">
+                                            <ion-icon name="settings-outline"></ion-icon>
+                                            <span class='title'>Settings</span>
+                                        </a>
+                                    </li>
+                
+                                    <li>
+                                        <a href="#">
+                                            <ion-icon name="exit-outline"></ion-icon>
+                                            <span class='title'>Logout</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="table">
+                <h1>List of Packages</h1>
+                <div class="Package">
+                    <a herf class="btn">
+                        <ion-icon name="add-circle-outline"></ion-icon>
+                        <span class="title">Add new Package</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>Id</td>
+                                        <td>Name of Package</td>
+                                        <td>Location</td>
+                                        <td>No. of People</td>
+                                        <td>Price</td>
+                                    </tr>
+                                </thead>
+    
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Hotel Bookings</td>
+                                        <td>Dillibazar</td>
+                                        <td>2</td>
+                                        <td>2000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        <script src="Admin.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

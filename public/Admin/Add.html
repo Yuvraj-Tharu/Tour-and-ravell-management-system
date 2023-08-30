@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="Add.css" />
+        <title>Add Packages</title>
+    </head>
+
+    <body>
+        <div class="main">
+            <h1>Add Packages</h1>
+            <div class="Package">
+                <button class="btn" id="Btn">
+                    <span
+                        ><ion-icon name="add-circle-outline"></ion-icon> Add new
+                        Package</span
+                    >
+                    <div id="modal" class="modal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <form>
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">
+                                            Add Packages
+                                        </h4>
+                                        <div class="modal-body">
+                                            <div class="form-group">
+                                                <label
+                                                    >Package Name<input
+                                                        type="text"
+                                                        name="Name"
+                                                        class="form-control"
+                                                        required
+                                                /></label>
+                                                <label
+                                                    >Destination<input
+                                                        type="text"
+                                                        name="Name"
+                                                        class="form-control"
+                                                        required
+                                                /></label>
+                                                <label
+                                                    >Pricing<input
+                                                        type="text"
+                                                        name="Name"
+                                                        class="form-control"
+                                                        required
+                                                /></label>
+                                                <label
+                                                    >Description<input
+                                                        type="text"
+                                                        name="Name"
+                                                        class="form-control"
+                                                        required
+                                                /></label>
+                                                <label
+                                                    >Ratings<input
+                                                        type="text"
+                                                        name="Name"
+                                                        class="form-control"
+                                                        required
+                                                /></label>
+                                                <label
+                                                    >Discounts<input
+                                                        type="text"
+                                                        name="Name"
+                                                        class="form-control"
+                                                        required
+                                                /></label>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <input
+                                                type="submit"
+                                                class="btn btn-info"
+                                                value="Save"
+                                            />
+                                            <input
+                                                type="button"
+                                                class="btn btn-default"
+                                                data-dismiss="modal"
+                                                value="Cancel"
+                                            />
+                                        </div>
+                                        <button
+                                            type="button"
+                                            class="close"
+                                            data-dismiss="modal"
+                                            aria-hidden="true"
+                                        >
+                                            &times;
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+
+                <div class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Id</td>
+                                <td>Package Name</td>
+                                <td>Destination</td>
+                                <td>Pricing</td>
+                                <td>Description</td>
+                                <td>Ratings</td>
+                                <td>Discounts</td>
+                                <!-- <td>Add image</td> -->
+                                <td>Action</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Room Booking</td>
+                                <td>Kathmandu</td>
+                                <td>1000</td>
+                                <td>
+                                    2 person room with 1 bathroom and 2 beds
+                                    with a balcony.
+                                </td>
+                                <td>3</td>
+                                <td>10%</td>
+                                <!-- <td>
+                                <form action="">
+                                    <input type="file" id="myFile" name="filename">
+                                    <input type="submit">
+                                </form>
+                            </td> -->
+                                <td>
+                                    <span class="edit"
+                                        ><ion-icon
+                                            name="cloud-upload-outline"
+                                        ></ion-icon
+                                        >Edit</span
+                                    >
+                                    <span class="delete"
+                                        ><ion-icon
+                                            name="trash-outline"
+                                        ></ion-icon
+                                        >Delete</span
+                                    >
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <script src="Add.js"></script>
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+        ></script>
+
+        <script>
+            document
+                .getElementById("cancel-btn")
+                .addEventListener("click", function () {
+                    window.location.href = document.referrer;
+                });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+body {
+    background-color: #f8f9fa;
+}
+
+/* Style the label elements */
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Style the input elements */
+input[type="text"] {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 5px;
+    width: 100%;
+}
+
+/* Style the file upload input element */
+input[type="file"] {
+    margin-top: 10px;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+    margin-top: 10px;
+    background-color: #ffa500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Style the submit button when hovered */
+button[type="submit"]:hover {
+    background-color: #ffa500;
+}
+
+.main-container {
+    margin: 5% auto;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

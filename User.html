@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="User.css">
+    <title>Add User</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1> Add User </h1>
+        <div class="User">
+            <button class="btn" id="Btn"><span><ion-icon name="add-circle-outline"></ion-icon> Add new User</span>
+                <div id="modal" class="modal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <form>
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Add User</h4>
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <label>First Name<input type="text" name="Name" class="form-control" required></label>
+                                            <label>Last Name<input type="text" name="Name" class="form-control" required></label>
+                                            <label>Contact Number<input type="text" name="Name" class="form-control" required></label>
+                                            <label>Address<input type="text" name="Name" class="form-control" required></label>
+                                            <label>Email<input type="text" name="Name" class="form-control" required></label>
+                                            <label>Password<input type="text" name="Name" class="form-control" required></label>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <input type="submit" class="btn btn-info" value="Save">
+                                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                                    </div>
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </button>
+                            
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Id</td>
+                            <td>First Name</td>
+                            <td>Last Name</td>
+                            <td>Contact Number</td>
+                            <td>Address</td>
+                            <td>Email</td>
+                            <td>Password</td>
+                            <td>Otp</td>
+                            <td>img_path</td>
+                            <td>Action</td>
+                        </tr>
+                    </thead>
+                                    
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Yuvraj</td>
+                            <td>Chaudhary</td>
+                            <td>981938101</td>
+                            <td>Kathmandu</td>
+                            <td>yuvraj123@gmail.com</td>
+                            <td>2321312</td>
+                            <td>102323</td>
+                            <td>
+                                <form action="">
+                                    <input type="file" id="myFile" name="filename">
+                                </form>
+                            </td>
+                            <td>
+                                <button class="edit" id="edit"><ion-icon name="cloud-upload-outline"></ion-icon>Edit
+                                    <div id="update" class="Update">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <form>
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title">Edit User</h4>
+                                                        <div class="modal-body">
+                                                            <div class="form-group">
+                                                                <label>First Name<input type="text" name="Name" class="form-control" required></label>
+                                                                <label>Last Name<input type="text" name="Name" class="form-control" required></label>
+                                                                <label>Contact Number<input type="text" name="Name" class="form-control" required></label>
+                                                                <label>Address<input type="text" name="Name" class="form-control" required></label>
+                                                                <label>Email<input type="text" name="Name" class="form-control" required></label>
+                                                                <label>Password<input type="text" name="Name" class="form-control" required></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <input type="submit" class="btn btn-info" value="Save">
+                                                            <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                                                        </div>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button class="delete" id="delete" data-dismiss="modal" aria-hidden="true"><ion-icon name="trash-outline"></ion-icon>Delete
+                                    <div class="Cancel" id="cancel" >
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <form>
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title">Are you sure you want to delete?</h4>
+                                                        <div class="modal-footer">
+                                                            <input type="submit" class="btn btn-info" value="Yes" id="yes">
+                                                            <input type="button" class="btn btn-default" data-dismiss="modal" value="No" id="no">
+                                                        </div>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                    </div>
+                                                </form>s
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="Add.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

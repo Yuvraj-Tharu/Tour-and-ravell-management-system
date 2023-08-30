@@ -1,0 +1,86 @@
+/* Set font family and background color for the whole page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5eded;
+}
+#myButton {
+  background-color: rgb(7, 7, 7);
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+/* Style for the header */
+h1 {
+  margin-left: 66px;
+}
+
+/* Style for the subheaders */
+h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Style for the paragraphs */
+p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Style for the unordered lists */
+ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* Style for the list items */
+li {
+  margin-bottom: 5px;
+}
+
+/* Style for the links */
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+/* Style for the links when hovered over */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Style for the container element */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Style for the main content area */
+main {
+  margin-top: 50px;
+}
+
+/* Style for the footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: #999999;
+}
+
+/* Style for the email link */
+.email-link {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+/* Style for the email link when hovered over */
+.email-link:hover {
+  text-decoration: underline;
+}
